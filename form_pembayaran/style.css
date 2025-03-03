@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex; */
+    padding: 20px;
+    background-color: #B5A8D5;
+}
+
+.form_pad {
+    margin-bottom: 15px;
+}
+
+.container_identitas {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(53, 53, 53, 0.1);
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    left: 8%;
+    top: 5%;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #4D55CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #7A73D1;
+}
+
+.cont_list {
+    background: white;
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(53, 53, 53, 0.1);
+    
+}
+
+.container_pembayaran {
+    background: white;
+    margin-top: 5%;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(53, 53, 53, 0.1);
+    width: 400px;
+   
+}
+
+.container_order {
+    /* display: flex; */
+    position: relative;
+}
+
+.right_cont {
+    position: absolute;
+    right: 8%;
+    top: 5%;
+}
+
+.label_id {
+    text-align: left;
+}
+
+
+.input_id {
+    width: 480px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#voucher {
+    padding-bottom: 10px;
+}
+
+.phone_group {
+    display: flex;
+    gap: 5px;
+}
+.phone_group select {
+    width: 20%;
+}
+.phone_group input {
+    width: 100%; 
+}
+
+#input_vr {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber/8.13.52/phonenumberutil.min.js" integrity="sha512-VxGAiCqILKukFEvlFcKFUS7lt09UTHOilghVs+r3oC0ISyhdgOGcw/ZiwiTX9Lore3N2OHvnxog92K+W0SaA2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Rekomendasi -->
+    <div>
+        <!-- REC 1 -->
+        <div>
+
+        </div>
+        <!-- END -->
+
+        <!-- REC 2 -->
+        <div>
+
+        </div>
+        <!-- END -->
+
+        <!-- REC 3 -->
+        <div>
+            
+        </div>
+        <!-- END -->
+    </div>
+    <!-- END -->
+
+    <!-- IDENTITAS -->
+    <div class="container_identitas">
+        <h2>Data Pembeli</h2>
+            <form action="identitas">
+                <div class="form_pad">
+                    <label class="label_id">Email</label>
+                    <br><input type="email" name="email" id="email_id" class="input_id" placeholder="Masukkan Email" ><br>
+                </div>
+                <div class="form_pad">
+                    Nama  <br><input type="text" name="nama" class="input_id" placeholder="Masukkan Nama"><br>
+                </div>
+                <div class="form_pad">
+                    Nomor HP 
+                        <div id="country" class="phone_group">
+                            <select id="countryCode">
+                            <option value="+1">🇺🇸 +1 (USA)</option>
+                            <option value="+44">🇬🇧 +44 (UK)</option>
+                            <option value="+91">🇮🇳 +91 (India)</option>
+                            <option value="+61">🇦🇺 +61 (Australia)</option>
+                            <option value="+81">🇯🇵 +81 (Japan)</option>
+                            <option value="+49">🇩🇪 +49 (Germany)</option>
+                            <option value="+33">🇫🇷 +33 (France)</option>
+                            <option value="+39">🇮🇹 +39 (Italy)</option>
+                            <option value="+55">🇧🇷 +55 (Brazil)</option>
+                            <option value="+7">🇷🇺 +7 (Russia)</option>
+                            <option value="+86">🇨🇳 +86 (China)</option>
+                            <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                            <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                            <option value="+92">🇵🇰 +92 (Pakistan)</option>
+                            <option value="+27">🇿🇦 +27 (South Africa)</option>
+                        </select>
+                        <input type="tel" name="hp" placeholder="Masukkan Nomor HP" class="input_id"><br>
+                    </div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- END -->
+    
+    <div class="right_cont">
+    <!-- ORDER -->
+        <div class="container_order">
+            <label style="font-weight: bold; font-size: 20px;">Order List</label><br>
+            <div id="order1"  class="cont_list">
+                <img src="" alt="">
+            </div>
+            <div id="order2" class="cont_list">
+                <img src="" alt="">
+            </div>
+            <div id="order3" class="cont_list">
+                <img src="" alt="">
+            </div>
+        </div>
+        <!-- END -->
+
+        <!-- PEMBAYARAN -->
+        <div class="container_pembayaran">
+            <div class="form_pad">
+                <label id="voucher">Kode Voucher</label><br>
+                <input type="text" id="input_vr">
+                <br>
+                <button class="btn" onclick="cekVoucher()">Cek Voucher</button>
+
+            </div>
+            <div class="form_pad">
+                Total Rp<label id="total" >200.000</label><br>
+                <button class="btn">Bayar</button>
+
+            </div>
+        </div>  
+        <!-- END -->
+    </div>
+
+    <script src="script.js"></script>`
+</body>
+</html>
