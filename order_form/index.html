@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber/8.13.52/phonenumberutil.min.js" integrity="sha512-VxGAiCqILKukFEvlFcKFUS7lt09UTHOilghVs+r3oC0ISyhdgOGcw/ZiwiTX9Lore3N2OHvnxog92K+W0SaA2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Left Layout -->
+    <div class="left_cont">
+        <div class="form_margin">
+            <!-- Rekomendasi Kelas -->
+            <div class="rekomendasi">
+
+                <div class="order">
+                    <img src="assets/images/2.webp" alt="React JS Basic">
+                    <div class="info">
+                        <h3>Mini Class Basic Java</h3>
+                        <p>Rp 50.000</p>
+                    </div>
+                        <button class="order-btn" data-name="Mini Class Basic Java" data-price="Rp 50.000" data-image="assets/images/2.webp">+ Order</button>
+                </div>
+                <div class="order">
+                    <img src="assets/images/3.webp" alt="Workshop Kotlin">
+                    <div class="info">
+                        <h3>Workshop Kotlin</h3>
+                        <p>Rp 40.000</p>
+                    </div>
+                        <button class="order-btn" data-name="Workshop Kotlin" data-price="Rp 40.000" data-image="assets/images/3.webp">+ Order</button>
+                </div>
+                <div class="order">
+                    <img src="assets/images/4.webp" alt="Belajar C Lanjut">
+                    <div class="info">
+                        <h3>Belajar C Lanjut</h3>
+                        <p>Rp 150.000</p>
+                    </div>
+                        <button class="order-btn" data-name="Belajar C Lanjut" data-price="Rp 150.000" data-image="assets/images/4.webp">+ Order</button>
+                </div>
+            </div>
+            <!--END-->
+
+            <!--IDENTITAS-->
+            <div class="container_identitas">
+                <h2>Data Pembeli</h2>
+                <form action="identitas">
+                    <div class="form_margin">
+                        <label>Email</label>
+                        <br><input type="email" name="email" id="email_id" class="input_id" placeholder="Masukkan Email" ><br>
+                    </div>
+                    <div class="form_margin">
+                        <label>Nama</label>
+                        <br><input type="text" name="nama" class="input_id" placeholder="Masukkan Nama"><br>
+                    </div>
+                    <div class="form_margin">
+                        <label>Nomor HP</label>
+                        <div id="country" class="phone_group">
+                            <select id="countryCode">
+                                <option value="+1">+1 (USA)</option>
+                                <option value="+44">+44 (UK)</option>
+                                <option value="+91">+91 (India)</option>
+                                <option value="+61">+61 (Australia)</option>
+                                <option value="+81">+81 (Japan)</option>
+                                <option value="+49">+49 (Germany)</option>
+                                <option value="+33">+33 (France)</option>
+                                <option value="+39">+39 (Italy)</option>
+                                <option value="+55">+55 (Brazil)</option>
+                                <option value="+7">+7 (Russia)</option>
+                                <option value="+86">+86 (China)</option>
+                                <option value="+62">+62 (Indonesia)</option>
+                                <option value="+234">+234 (Nigeria)</option>
+                                <option value="+92">+92 (Pakistan)</option>
+                                <option value="+27">+27 (South Africa)</option>
+                            </select>
+                            <input type="tel" name="hp" placeholder="Masukkan Nomor HP" class="input_id"><br>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox">
+                            <span>Saya setuju dengan syarat dan ketentuan</span>
+                        </div>
+                        <button class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- END -->
+        </div>
+    </div>
+    <!--CLOSER-->
+
+    
+    <!-- RIGHT LAYOUT -->
+    <div class="right_cont">
+        <!--ORDER LIST-->
+        <div class="container_order">
+            <label style="font-weight: bold; font-size: 20px;">Order List</label><br>
+            <div class="cont_list">
+                <img src="assets/images/1.webp" alt="" id="python" class="img_order" >
+                <div class="list">
+                    <span>Mahir DataScience Dengan Python</span>
+                    <span>Rp 200.000</span>
+                </div>
+            </div>
+        </div>
+        <!-- END -->
+
+        <!-- PEMBAYARAN -->
+        <div class="container_pembayaran">
+            <div class="form_margin">
+                <div class="img_voucher">
+                <img src="assets/icons/voucher.svg" alt="" width="5%" height="5%">
+                <span>Kode Voucher</span>
+                </div>
+                
+                <input type="text" id="input_vr">
+                <br>
+                <button id="cekVoucher" class="btn">Cek Voucher</button>
+
+            </div>
+            <div class="form_margin">
+                <div class="Total">
+                    <img src="assets/icons/shopbag.svg" alt="" width="5%" height="5%" >
+                    <span>Total Biaya</span>
+                </div>
+                <div class="totalList">
+                </div>
+                <div class="total_biaya">
+                    <span>Total</span>
+                    <span id="total">Rp 200.000</span>
+                </div>
+                <button class="btn">Bayar</button>
+            </div>
+        </div>  
+        <!-- END -->
+    </div>
+    <!--CLOSE-->
+
+    <script src="script.js"></script>`
+</body>
+</html>
