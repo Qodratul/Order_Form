@@ -1,3 +1,1 @@
-#Pemograman Web
-
-Ini adalah Repository pemgumpulan semua tugas dari mata kuliah Pemograman Web
+Ini adalah front-end dan sedikit logika untuk sebuah order form untuk tugas pemograman web
